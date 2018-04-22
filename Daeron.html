@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8" />
+ 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Daeron</title>
+	
+	<link rel="icon" type="image/ico" href="favicon.ico">
+	
+	<link href="https://fonts.googleapis.com/css?family=Quintessential" rel="stylesheet">
+	<link rel='stylesheet' href='css/framework.css'>
+	<link rel='stylesheet' href='css/keyboarder.css'>
+	<link rel='stylesheet' href='css/daeron.css'>
+</head>
+
+<body>
+	<header>
+		<nav class="navbar">
+			<img src="device.png" class="app-icon" />
+			<a href="#" class="app-name">Daeron</a>
+
+			<ul class="right"> 
+				<li>
+					<a href="Rumil.html" class="navlink">Rúmil &rarr;</a>
+				</li>           
+			</ul>
+		</nav>
+	</header>
+
+<div id="root" class="main">
+	<section>
+		<h3 class="right cirth"></h3>
+		<h3>Teitho Girth!</h3>
+		<textarea class="cirth" id="input"></textarea>
+	</section>
+	
+	<section style="display: none">
+		<h3>Original:</h3>
+		<textarea id="original"></textarea>
+	</section>
+	
+	<section>
+		<h3>Resources</h3>
+		<p>
+			Cf. <b><a href="http://eldamo.org/" target="_blank">Eldamo</a></b>
+			for a detailed database of Tolkien's linguistic creations.
+		</p>
+	</section>
+</div>
+  
+<!-- Mappings for Tengwar -->
+<script type="text/javascript" src="js/keyboarder.js"></script>
+<script type="text/javascript" src="js/cirth_map.js"></script>
+
+<script type="text/javascript">
+
+	(function () {
+		var input = document.getElementById('input');
+		
+		Keyboarder.applyLayout(input, CirthKeyMap);
+		Keyboarder.showOnscreenKeyboard(input, CirthKeyMap);
+		
+		input.focus();
+	})();
+
+</script>
+
+</body>
+
+</html>

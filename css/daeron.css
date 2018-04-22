@@ -1,0 +1,38 @@
+
+
+@font-face { 
+	font-family: 'CirthUnicode'; 
+	src: url('../fonts/_Constructium.ttf');
+	unicode-range: U+E080-E0EB;	
+}
+.cirth {
+	font-family: 'CirthUnicode';
+	font-size: 150%;
+	font-weight: normal;
+}
+
+nav.navbar .app-name {
+	font-family: 'Quintessential', cursive;
+	font-weight: normal;
+}
+
+nav.navbar .app-icon {
+	float: left;
+	max-height: 60px;
+	margin-top: 5px;
+	margin-left: 40px;
+	margin-right: -30px;
+}
+
+body textarea {
+	padding: 10px;
+	min-width: 100%;
+	max-width: 100%;
+	min-height: 6em;
+}
+#input {
+	min-height: 10em;
+}
+.navbar::before {
+    background-color: rgba(38, 91, 166, 0.85);
+}

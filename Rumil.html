@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8" />
+ 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Rúmil</title>
+	
+	<link rel="icon" type="image/ico" href="favicon.ico">
+	
+	<link href="https://fonts.googleapis.com/css?family=Quintessential" rel="stylesheet">
+	<link rel='stylesheet' href='css/framework.css'>
+	<link rel='stylesheet' href='css/keyboarder.css'>
+	<link rel='stylesheet' href='css/rumil.css'>
+</head>
+
+<body>
+	<header>
+		<nav class="navbar">
+			<img src="device.png" class="app-icon" />
+			<a href="#" class="app-name">Rúmil</a>
+				
+			<ul class="right"> 
+				<li>
+					<a href="Daeron.html" class="navlink">Daeron &rarr;</a>
+				</li>           
+			</ul>
+		</nav>
+	</header>
+
+<div id="root" class="main">
+	<section>
+		<h3 class="right tengwar">   </h3>
+		<h3>Á Tecë Tengwar!</h3>
+		<textarea class="tengwar" id="input"></textarea>
+	</section>
+	
+	<section style="display: none">
+		<h3>Original:</h3>
+		<textarea id="original"></textarea>
+	</section>
+	
+	<section>
+		<h3>Resources</h3>
+		<p>
+			The keyboard layout replicated on this page (minus a few punctuation marks) can be found at the 
+			<b>
+				<a href="http://freetengwar.sourceforge.net/keylayouts.html" 
+					target="_blank">Free Tengwar Font Project</a>
+			</b>.
+		</p>
+		<br>
+		<p>
+			Cf. <b><a href="http://at.mansbjorkman.net/tengwar.htm" target="_blank">Amanye Tenceli</a></b> 
+			for more information on the tengwar modes and glyphs.
+		</p>
+		<br>
+		<p>
+			Cf. <b><a href="http://eldamo.org/" target="_blank">Eldamo</a></b>
+			for a detailed database of Tolkien's linguistic creations.
+		</p>
+		<br>
+		<p>
+			Cf. <b><a href="https://www.tecendil.com/" target="_blank">Tecendil</a></b> 
+			for non-Unicode fonts or transcriptions from Romanized spelling.
+		</p>
+	</section>
+</div>
+  
+<!-- Mappings for Tengwar -->
+<script type="text/javascript" src="js/keyboarder.js"></script>
+<script type="text/javascript" src="js/tengwar_map.js"></script>
+
+<script type="text/javascript">
+
+	(function () {
+		var input = document.getElementById('input');
+		
+		Keyboarder.applyLayout(input, TengwarKeyMap);
+		Keyboarder.showOnscreenKeyboard(input, TengwarKeyMap);
+		
+		input.focus();
+	})();
+
+</script>
+
+</body>
+
+</html>

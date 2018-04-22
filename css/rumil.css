@@ -1,0 +1,35 @@
+
+
+@font-face { 
+	font-family: 'TengwarUnicode'; 
+	src: url('../fonts/_tengtelcOTL.ttf');
+	unicode-range: U+E000-E07F, U+200D-205D, U+2E2C-2E31, U+10FB-10FB, U+003A-003A;	
+}
+.tengwar {
+	font-family: 'TengwarUnicode';
+	font-size: 150%;
+	font-weight: normal;
+}
+
+nav.navbar .app-name {
+	font-family: 'Quintessential', cursive;
+	font-weight: normal;
+}
+
+nav.navbar .app-icon {
+	float: left;
+	max-height: 60px;
+	margin-top: 5px;
+	margin-left: 40px;
+	margin-right: -30px;
+}
+
+body textarea {
+	padding: 10px;
+	min-width: 100%;
+	max-width: 100%;
+	min-height: 6em;
+}
+#input {
+	min-height: 10em;
+}

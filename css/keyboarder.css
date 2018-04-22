@@ -1,0 +1,85 @@
+
+ul.no-style li {
+	list-style: none;
+}
+
+.clear::after {
+  content: "";
+  display: table;
+  clear: both; 
+}
+
+
+.keyboard {
+    display: block;
+    width: 672px;
+    margin: 0 auto;
+	overflow: hidden;
+}
+
+.keyboard .key {
+	display: inline-block;
+	float: left;
+	
+    width: 40px;
+    height: 40px;
+	
+    margin: 0 5px 5px 0;
+	
+    line-height: 40px;
+    text-align: center;
+	
+	border-radius: 5px;
+	border: 2px solid rgba(0, 0, 0, 0.1);
+	box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+}
+.keyboard .key.CTRL,
+.keyboard .key.ALT,
+.keyboard .key.ALTGR {
+	width: 62px;
+}
+.keyboard .key.TAB,
+.keyboard .key.BKSP,
+.keyboard .key.CAPS {
+	width: 82px;
+}
+.keyboard .key.RETN {
+	width: 85px;
+}
+.keyboard .key.SHIFT {
+	width: 106px;
+}
+.keyboard .key.SPAC {
+	width: 399px;
+}
+.keyboard .key:hover,
+.keyboard .key.active {
+	position: relative;
+	top: 1px;
+	left: 1px;
+	border-color: #d5d5d5;
+	cursor: pointer;
+}
+
+
+.keyboard .key .standard,
+.keyboard .key .shift,
+.keyboard .key .alt,
+.keyboard .key .altShift {
+	display: none;
+}
+.keyboard.showStandard .key .standard,
+.keyboard.showShift .key .shift,
+.keyboard.showAlt .key .alt,
+.keyboard.showAltShift .key .altShift {
+	display: initial;
+}
+.keyboard .key .shift,
+.keyboard .key .alt,
+.keyboard .key .altShift {
+	position: relative;
+	top: -2px;
+	left: 2px;
+	opacity: 0.75;
+	font-size: 95%;
+}
