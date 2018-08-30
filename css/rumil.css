@@ -2,7 +2,7 @@
 
 @font-face { 
 	font-family: 'TengwarUnicode'; 
-	src: url('../fonts/_tengtelcOTL.ttf');
+	src: url('fonts/_tengtelcOTL.ttf');
 	unicode-range: U+E000-E07F, U+200D-205D, U+2E2C-2E31, U+10FB-10FB, U+003A-003A;	
 }
 .tengwar {

@@ -2,7 +2,7 @@
 
 @font-face { 
 	font-family: 'CirthUnicode'; 
-	src: url('../fonts/_Constructium.ttf');
+	src: url('fonts/_Constructium.ttf');
 	unicode-range: U+E080-E0EB;	
 }
 .cirth {
